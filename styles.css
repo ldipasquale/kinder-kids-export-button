@@ -1,0 +1,149 @@
+body {
+  background-color: #985cdd;
+  font-family: sans-serif;
+}
+
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 8px 16px;
+  border-bottom: 2px solid #fff;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  color: #8642d6;
+}
+
+header img {
+  height: 36px;
+  margin-left: 8px;
+}
+
+.step {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s;
+  color: #000;
+}
+
+.step a {
+  color: #111;
+}
+
+.step img {
+  border-radius: 8px;
+  margin-top: 8px;
+}
+
+.step li {
+  margin-bottom: 24px;
+}
+
+.step.toRightStep {
+  transform: translateX(100%);
+}
+
+.step.toLeftStep {
+  transform: translateX(-100%);
+}
+
+.spinner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #461d75;
+  transition: all 0.25s;
+  z-index: 1;
+}
+
+.spinner.hiddenSpinner {
+  opacity: 0;
+  z-index: -1;
+}
+
+.button {
+  background-color: #ff7876;
+  display: inline-block;
+  border-radius: 6px;
+  color: #fff;
+  padding: 16px 20px;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  border: 2px solid #3e319e;
+  cursor: pointer;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  transition: all 0.5s;
+}
+
+.button.disabledButton {
+  pointer-events: none;
+  opacity: 0.7;
+}
+
+.button:hover {
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+.downloadRef {
+  display: none;
+}
+
+.loader,
+.loader:after {
+  border-radius: 50%;
+  width: 6em;
+  height: 6em;
+}
+.loader {
+  margin: 60px auto;
+  font-size: 10px;
+  position: relative;
+  text-indent: -9999em;
+  border-top: 0.5em solid rgba(255, 255, 255, 0.2);
+  border-right: 0.5em solid rgba(255, 255, 255, 0.2);
+  border-bottom: 0.5em solid rgba(255, 255, 255, 0.2);
+  border-left: 0.5em solid #ffffff;
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-animation: load8 1.1s infinite linear;
+  animation: load8 1.1s infinite linear;
+}
+@-webkit-keyframes load8 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes load8 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
