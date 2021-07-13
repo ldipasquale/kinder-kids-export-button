@@ -1,6 +1,7 @@
 body {
   background-color: #985cdd;
   font-family: sans-serif;
+  /* overflow-x: hidden; */
 }
 
 .hide {
@@ -16,7 +17,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  padding: 8px 16px;
+  padding: 2px 16px;
   border-bottom: 2px solid #fff;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
   color: #8642d6;
@@ -50,11 +51,11 @@ header img {
 
 .step img {
   border-radius: 8px;
-  margin-top: 8px;
+  margin-top: 4px;
 }
 
 .step li {
-  margin-bottom: 24px;
+  margin-bottom: 16px;
 }
 
 .step.toRightStep {
