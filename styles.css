@@ -3,6 +3,10 @@ body {
   font-family: sans-serif;
 }
 
+.hide {
+  display: none !important;
+}
+
 header {
   position: absolute;
   top: 0;
@@ -21,6 +25,10 @@ header {
 header img {
   height: 36px;
   margin-left: 8px;
+}
+
+.emptyItems {
+  font-size: 18px;
 }
 
 .step {
